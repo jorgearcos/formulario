@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>formulario</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<H1>DATOS DE VENTA</H1>
+
+<form action="sindefinir" method="get" class="formulario">
+ <div id="caja1" class="formulario__contenido">
+     <div id="select-1" class="formulario__contenido--select" >
+            <select name="giro" id="g_comercial">
+                    <option value="0">Giro comercial</option>
+                    <option value="1">item1</option>
+                    <option value="2">item2</option>
+                    <option value="3">item3</option>
+                </select>
+     </div>
+
+       <p>opera con tarjeta</p>
+       <fieldset>
+       <input type="radio" name="op_t" value="y" required>Si
+       <input type="radio" name="op_t" value="n" required>No
+       </fieldset>
+       <div id="select2" class="formulario__contenido--select" >
+            <select name="giro" id="p_actual">
+              <option value="0">proveedor actual</option>
+              <option value="1">item1</option>
+              <option value="2">item2</option>
+              <option value="3">item3</option>
+          </select>
+       </div>
+
+        <p>volumen anual de ventas</p>
+        <input type="text" class="formulario__contenido--casilla" />
+
+        <p>Acepta pagos por adelantados</p>
+        <p>(abonos/anticipos)</p>
+        <fieldset>
+          <input type="radio" name="pag_a" value="y" >Si
+          <input type="radio" name="pag_a" value="n" >No
+        </fieldset>
+        <p>¿Acepta pagos o reliza ventas a través de la web?</p>
+        <fieldset>
+          <input type="radio" name="pag_a" value="y" >Si
+          <input type="radio" name="pag_a" value="n" >No
+        </fieldset>
+
+       <div id="select3" class="formulario__contenido--select" >
+            <select name="giro" id="proveedor_act2">
+                <option value="0">proveedor actual</option>
+                <option value="1">item1</option>
+                <option value="2">item2</option>
+                <option value="3">item3</option>
+            </select>
+       </div>
+
+        <p>URL</p>
+        <input type="url" name="ruta">
+        <p>Desea realiza ventas web con MC</p>
+        <fieldset>
+         <input type="radio" name="vw" value="y" required>Si
+         <input type="radio" name="vw" value="n" required>No
+        </fieldset>
+    </div>
+
+    <div id="caja2" class="formulario__contenido">
+        <div id="select4" class="formulario__contenido--select">
+         <select name="act_e" id="a_economica">
+              <option value="0">actividad económica</option>
+              <option value="2">item2</option>
+              <option value="3">item3</option>
+              <option value="1">item1</option>
+         </select>
+        </div>
+
+        <p>merchant actual</p>
+        <input type="text" class="formulario__contenido--casilla" />
+
+        <p>valor promedio de ticket</p>
+        <input type="text" class="formulario__contenido--casilla" />
+
+        <p>% valor tarjetas internacionales (si las conoce)</p>
+        <input type="text" class="formulario__contenido--casilla"/>
+
+        <p>Número de dias antes que se realiza la entrega</p>
+        <input type="text" class="formulario__contenido--casilla" />
+        &nbsp;
+        &nbsp;
+        <p>merchant actual</p>
+        <input type="text" class="formulario__contenido--casilla" />
+        <p>datos web adicionales</p>
+        <input type="text" class="formulario__contenido--casilla" />
+    </div>
+</form>
+
+</body>
+</html>
